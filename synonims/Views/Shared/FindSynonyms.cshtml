@@ -1,0 +1,45 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #form {
+            width:100%;
+            text-align:center;
+
+        }
+        body {
+            background-color:#00848c;
+        }
+        h3{
+            color: #edebd9;
+        }
+        p{
+            color: #fec20f;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="form">
+        <h3 class="display-5">Word that you enterd: @Model[0].Name </h3>
+
+        <h3 class="display-5">Synonyms for this word:</h3>
+        <br />
+
+        @foreach (Word m in Model)
+        {
+            @if (m.Name != Model[0].Name)
+            {
+                <p>@m.Name</p>
+                <br />
+            }
+        }
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Search";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color:#00848c;
+        }
+
+        h6 {
+            color: #edebd9;
+        }
+
+        input {
+            border-radius: 11px;
+            color: #fec20f;
+            padding-top: 7px;
+            padding-bottom: 7px;
+             
+        }
+
+        #search{
+
+            border-radius: 11px;
+            color: #00848c;
+            width:330px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            
+        }
+        #search:hover{
+            background-color:#fec20f;
+            text-align:center;
+        }
+        label {
+            font-size: 34px;
+            margin-right: 5px;
+            color: #edebd9;
+           
+        }
+
+        #form {
+            width:100%;
+            text-align:center;
+
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <div id="form">
+         <form action="/Word/GetSynonym" method="post">
+        <br />
+        <h6 class="display-5">Type a word that you would like to see synonyms for</h6>
+        <br />
+        <label>Enter word:</label>
+        <input name="word" />
+        <br />
+        <br />
+        <input id="search" type="submit" value="Search" />
+         </form>
+    </div>
+   
+</body>
+</html>
+
+
+
+

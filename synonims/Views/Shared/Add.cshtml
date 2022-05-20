@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Add";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #00848c;
+        }
+
+        input {
+            border-radius: 11px;
+            color: #fec20f;
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+
+        label {
+            color: #edebd9;
+            font-size: 34px;
+            margin-right: 5px;
+        
+        }
+
+        h3 {
+            color: #edebd9;
+        }
+        #form {
+            width:100%;
+            text-align:center;
+
+        }
+        #add{
+
+            border-radius: 11px;
+            color: #00848c;
+            width:430px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            
+        }
+         #add:hover{
+            background-color:#fec20f;
+            text-align:center;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="form">
+        <h3 class="display-5">Add your synonym</h3>
+        <br />
+        <form action="word/create" method="post">
+            <label>Enter a new word:</label>
+            <input name="word" />
+            <br />
+            <br />
+            <label>Enter its synonym:</label>
+            <input name="synonym" />
+            <br />
+            <br />
+            <input id="add" type="submit" value="Add" />
+        </form>
+    </div>
+
+</body>
+
+</html>
+
+
